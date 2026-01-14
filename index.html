@@ -560,21 +560,36 @@
           &=
           \mathbb{E}\!\left[
           q \sim P(Q),\ \{o_i\}_{i=1}^{G} \sim \pi_{\theta_{\mathrm{old}}}(\cdot \mid q)
-          \right]
-          \\
+          \right] \\[6pt]
           &\quad
           \frac{1}{G}
           \sum_{i=1}^{G}
           \frac{1}{|o_i|}
           \sum_{t=1}^{|o_i|}
-          \min \Bigl(
-          r_{i,t}(\theta)\,\hat{A}_{i,t},\,
-          \operatorname{clip}(r_{i,t}(\theta), 1-\epsilon, 1+\epsilon)\,\hat{A}_{i,t}
-          \Bigr),
+          \Bigl\{
+          \min \left(
+          \frac{\pi_\theta(o_{i,t} \mid q, o_{i,&lt;t})}
+          {\pi_{\theta_{\mathrm{old}}}(o_{i,t} \mid q, o_{i,&lt;t})}
+          \hat{A}_{i,t},
+          \;
+          \operatorname{clip}\!\left(
+          \frac{\pi_\theta(o_{i,t} \mid q, o_{i,&lt;t})}
+          {\pi_{\theta_{\mathrm{old}}}(o_{i,t} \mid q, o_{i,&lt;t})},
+          1-\epsilon,\ 1+\epsilon
+          \right)
+          \hat{A}_{i,t}
+          \right)
+          \\
+          &\qquad
+          -\,
+          \beta D_{\mathrm{KL}}\!\left(
+          \pi_\theta \,\|\, \pi_{\mathrm{ref}}
+          \right)
+          \Bigr\}.
           \end{aligned}
           $$
         </div>
-        <p>where $r_{i,t}(\theta)$ denotes the policy ratio.</p>
+        <!-- <p>where $r_{i,t}(\theta)$ denotes the policy ratio.</p> -->
         <p>
           In practice, we remove KL regularization and entropy bonuses. We adopt <strong>Adaptive Batch
             Filling</strong>, which buffers valid trajectories and continues rollout generation until a full batch of
