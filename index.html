@@ -64,8 +64,9 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <span class="astra-title">ASTRA<img src="./static/images/logo.png"
-                  style="height: 1.2em; vertical-align: bottom; margin: 0 0.1rem; background: transparent;">:</span><br>
+              <span class="astra-title"><img src="./static/images/logo.png"
+                  style="height: 1.2em; vertical-align: bottom; margin: 0 0.1rem; background: transparent;">
+                ASTRA:</span><br>
               <span class="astra-subtitle">Automated Synthesis of agentic Trajectories and Reinforcement Arenas</span>
             </h1>
             <style>
@@ -267,6 +268,78 @@
     /* 加载 KaTeX 字体 */
     @import url('https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css');
   </style>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Tabs -->
+      <div class="tabs is-centered gallery-tabs" id="gallery-tabs">
+        <ul>
+          <li class="is-active" data-tab="0">
+            <a>
+              <span>Q-A Pairs Synthesis</span>
+            </a>
+          </li>
+          <li data-tab="1">
+            <a>
+              <span>Trajectory Verification</span>
+            </a>
+          </li>
+          <li data-tab="2">
+            <a>
+              <span>Environment Synthesis</span>
+            </a>
+          </li>
+          <li data-tab="3">
+            <a>
+              <span>Environment Merging</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery-wrapper">
+        <div class="gallery-arrow gallery-prev" id="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+
+        <div class="gallery-stage">
+          <!-- Item 0 -->
+          <div class="gallery-item is-active" data-index="0">
+            <video poster="" autoplay controls muted loop playsinline width="100%">
+              <source src="./static/videos/QA_synthesis.mov" type="video/mp4">
+              <source src="./static/videos/QA_synthesis.mov" type="video/quicktime">
+            </video>
+          </div>
+          <!-- Item 1 -->
+          <div class="gallery-item" data-index="1">
+            <video poster="" controls muted loop playsinline width="100%">
+              <source src="./static/videos/verification&amp;filtering.mov" type="video/mp4">
+              <source src="./static/videos/verification&amp;filtering.mov" type="video/quicktime">
+            </video>
+          </div>
+          <!-- Item 2 -->
+          <div class="gallery-item" data-index="2">
+            <video poster="" controls muted loop playsinline width="100%">
+              <source src="./static/videos/env_synthesis.mov" type="video/mp4">
+              <source src="./static/videos/env_synthesis.mov" type="video/quicktime">
+            </video>
+          </div>
+          <!-- Item 3 -->
+          <div class="gallery-item" data-index="3">
+            <video poster="" controls muted loop playsinline width="100%">
+              <source src="./static/videos/env_merge.mov" type="video/mp4">
+              <source src="./static/videos/env_merge.mov" type="video/quicktime">
+            </video>
+          </div>
+        </div>
+
+        <div class="gallery-arrow gallery-next" id="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section" style="margin: 2rem 0 !important; padding: 1.5rem 0 !important;">
     <div class="container is-max-desktop">
