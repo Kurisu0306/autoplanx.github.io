@@ -69,13 +69,22 @@
                   style="height: 1.2em; margin-right: 0.2rem; background: transparent;">
                 &nbsp;ASTRA:
               </span><br>
-              <span class="astra-subtitle">Automated Synthesis of agentic Trajectories and Reinforcement Arenas</span>
+              <span class="astra-subtitle"><span class="astra-initial">A</span>utomated <span
+                  class="astra-initial">S</span>ynthesis of Agentic <span class="astra-initial">T</span>rajectories and
+                <span class="astra-initial">R</span>einforcement <span class="astra-initial">A</span>renas</span>
             </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">January 22, 2026</span>
+              <span class="author-block">&nbsp;—&nbsp;</span>
+              <span class="author-block">Beike Language and Intelligence</span>
+            </div>
+
             <style>
               .publication-title {
                 font-family: 'Montserrat', sans-serif !important;
                 font-weight: 800 !important;
-                margin-bottom: 1.5rem !important;
+                margin-bottom: 1rem !important;
                 line-height: 1.1 !important;
               }
 
@@ -93,118 +102,118 @@
               .astra-subtitle {
                 font-family: 'Lora', serif;
                 font-size: 0.7em;
+                /* 稍微调小字体以确保一行显示 */
                 font-weight: 400;
                 font-style: italic;
                 color: #5a6c7d;
-                letter-spacing: 0.02rem;
+                letter-spacing: 0.01rem;
                 display: block;
                 margin-top: 0.6rem;
                 line-height: 1.4;
+                white-space: nowrap;
+                /* 强制不换行 */
+              }
+
+              .astra-initial {
+                font-weight: 700;
+                text-decoration: underline;
+                color: #2c3e50;
+              }
+
+              .link-separator {
+                margin: 0 0.5rem;
+                color: #b5b5b5;
+                font-weight: 300;
+                display: inline-block;
+                vertical-align: middle;
+              }
+
+              .custom-link {
+                color: #4a4a4a;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+              }
+
+              .custom-link:hover {
+                color: #2c3e50;
+                text-decoration: underline;
+              }
+
+              .custom-link .icon {
+                margin-right: 0.2rem;
+              }
+
+              .publication-authors {
+                font-family: 'Google Sans', sans-serif;
+                color: #4a4a4a;
+                margin-bottom: 1.5rem;
+              }
+
+              /* 移动端适配：屏幕过窄时允许换行 */
+              @media screen and (max-width: 768px) {
+                .astra-subtitle {
+                  white-space: normal;
+                  font-size: 0.6em;
+                }
               }
             </style>
-
-            <!-- <div class="publication-authors">
-              <span class="author-block">
-                <span class="author-name">Houyi Li</span><sup style="font-size: 0.6rem;">1,2</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Wenzhen Zheng</span><sup style="font-size: 0.6rem;">1</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Qiufeng Wang</span><sup style="font-size: 0.6rem;">1</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Hanshan Zhang</span><sup style="font-size: 0.6rem;">1</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Zili Wang</span><sup style="font-size: 0.6rem;">1</sup>
-              </span>
-              <div style="width: 100%; height: 0;"></div>
-              <span class="author-block">
-                <span class="author-name">Shijie Xuyang</span><sup style="font-size: 0.6rem;">1,2</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Yuantao Fan</span><sup style="font-size: 0.6rem;">1</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Zhenyu Ding</span><sup style="font-size: 0.6rem;">3</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Haoying Wang</span><sup style="font-size: 0.6rem;">3</sup>
-              </span>
-              <div style="width: 100%; height: 0;"></div>
-              <span class="author-block">
-                <span class="author-name">Ning Ding</span><sup style="font-size: 0.6rem;">3</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Shuigeng Zhou</span><sup style="font-size: 0.6rem;">2</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Xiangyu Zhang</span><sup style="font-size: 0.6rem;">1,4</sup>
-              </span>
-              <span class="author-block">
-                <span class="author-name">Daxin Jiang</span><sup style="font-size: 0.6rem;">1</sup>
-              </span>
-            </div>
-            <div class="institutional-affiliations" style="text-align: center; margin-top: 0.25rem; font-size: 0.9rem;">
-              <span style="margin-right: 1rem;"><sup style="font-size: 0.6rem;">1</sup>StepFun</span>
-              <span style="margin-right: 1rem;"><sup style="font-size: 0.6rem;">2</sup>Fudan University</span>
-              <span style="margin-right: 1rem;"><sup style="font-size: 0.6rem;">3</sup>Xi'an Jiaotong University</span>
-              <span><sup style="font-size: 0.6rem;">4</sup>Megvii Technology</span>
-            </div> -->
-
 
             <div class="publication-links publication-links--pretty">
               <!-- Project Page Link -->
               <span class="link-block">
                 <a href="https://autoplanx.github.io" target="_blank" rel="noopener noreferrer"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link custom-link">
                   <span class="icon">
                     <i class="fas fa-home"></i>
                   </span>
                   <span>Project Page</span>
                 </a>
               </span>
+              <span class="link-separator">|</span>
               <!-- Code Link -->
               <span class="link-block">
                 <a href="https://github.com/autoplanx/autoplanx" target="_blank" rel="noopener noreferrer"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link custom-link">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>Github</span>
                 </a>
               </span>
+              <span class="link-separator">|</span>
               <!-- HF Dataset Link -->
               <span class="link-block">
                 <a href="https://huggingface.co/datasets/autoplanx" target="_blank" rel="noopener noreferrer"
-                  class="external-link button is-normal is-rounded is-dark">
+                  class="external-link custom-link">
                   <span class="icon">
                     <i class="fas fa-database"></i>
                   </span>
                   <span>HF Dataset</span>
                 </a>
-                <!-- HF Model Link -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/autoplanx" target="_blank" rel="noopener noreferrer"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="24"
-                        height="24" />
-                    </span>
-                    <span>HF Model</span>
-                  </a>
-                </span>
-                <!-- Paper Link -->
-                <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark is-disabled" aria-disabled="true"
-                    tabindex="-1" title="Paper coming soon">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper (Coming Soon)</span>
-                  </a>
-                </span>
+              </span>
+              <span class="link-separator">|</span>
+              <!-- HF Model Link -->
+              <span class="link-block">
+                <a href="https://huggingface.co/autoplanx" target="_blank" rel="noopener noreferrer"
+                  class="external-link custom-link">
+                  <span class="icon">
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="24"
+                      height="24" />
+                  </span>
+                  <span>HF Model</span>
+                </a>
+              </span>
+              <span class="link-separator">|</span>
+              <!-- Paper Link -->
+              <span class="link-block">
+                <a href="#" class="external-link custom-link" aria-disabled="true" tabindex="-1"
+                  title="Paper coming soon" style="opacity: 0.5; cursor: default;">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
               </span>
             </div>
 
@@ -271,10 +280,52 @@
 
     /* 加载 KaTeX 字体 */
     @import url('https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css');
+
+    /* 摘要盒子样式 */
+    .abstract-box {
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid #2c3e50;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .abstract-text {
+      font-family: 'Lora', serif;
+      font-size: 1.3em;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    .abstract-lead {
+      color: #2c3e50;
+      font-weight: 700;
+    }
   </style>
 
   <section class="section">
     <div class="container is-max-desktop">
+      <div class="abstract-box">
+        <div class="abstract-text content has-text-justified">
+          <p>
+            <span class="abstract-lead">ASTRA</span> is an open-source project that generates high-quality, executable
+            agent–environment interaction data for AI training and evaluation.
+          </p>
+          <p>
+            It first collects real MCP interactions to capture authentic, multi-turn tool
+            usage, then synthesizes sandbox-checked environments by generating structured specifications and Python
+            implementations that replicate and verify these interactions. This two-stage pipeline enables scalable,
+            reliable training of multi-step, tool-augmented agents.
+          </p>
+          <p>
+            The videos below show the four stages of ASTRA’s environment synthesis pipeline and show how executable
+            environments are built automatically.
+          </p>
+        </div>
+      </div>
+
       <!-- Tabs -->
       <div class="tabs is-centered gallery-tabs" id="gallery-tabs">
         <ul>
